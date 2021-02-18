@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(237, 238, 238);
+}
+.header {
+    background-color: rgb(255, 255, 255);
+    padding: 14px 20px;
+}
+  
+.header h1, p {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.carousel {
+  width:520px;
+  height:350px;
+}
+
+.carousel h3 {
+  text-align: center;
+}
