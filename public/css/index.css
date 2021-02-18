@@ -1,20 +1,35 @@
 body{
     background-color: rgb(237, 238, 238);
 }
-.header {
-    background-color: rgb(255, 255, 255);
-    padding: 14px 20px;
-}
-  
-.header h1, p {
-    color: rgb(0, 0, 0);
-    text-align: center;
-}
+
 .carousel {
   width:520px;
-  height:350px;
+  height:348px;
+  box-shadow: 5px 10px 8px #888888
 }
 
 .carousel h3 {
   text-align: center;
+}
+
+.carousel-caption p {
+  color: rgb(255, 255, 255);
+}
+
+.container a {
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 5px 10px 8px #888888;
+  font-size: 150%;
+  max-width: 520px;
+  margin: auto;
+}
+
+.navbar-brand h3 {
+  text-align: center;
+}
+
+.carousel-inner:hover {
+  border-style:solid;
+  border-color:rgb(141, 141, 141);
 }
