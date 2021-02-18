@@ -11,6 +11,8 @@ var handlebars = require('express3-handlebars')
 var index = require('./routes/index');
 var create = require('./routes/create');
 var reviewCreate = require('./routes/reviewCreate');
+var find = require('./routes/find');
+const { allowedNodeEnvironmentFlags } = require('process');
 // Example route
 // var user = require('./routes/user');
 
@@ -39,6 +41,7 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/create', create.view);
 app.get('/reviewCreate', reviewCreate.view);
+app.get('/find',find.view);
 
 // Example route
 // app.get('/users', user.list);
