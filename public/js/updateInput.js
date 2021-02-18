@@ -15,6 +15,10 @@ function initializePage() {
 
   $('#addInstr').click(addInstruction);
   $(document).on('click', '#removeInstr', removeInstruction);
+
+	$(function () {
+  	$('[data-toggle="popover"]').popover()
+	})
 }
 
 function addIngredient() {
