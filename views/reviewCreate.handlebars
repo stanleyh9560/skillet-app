@@ -12,16 +12,46 @@
 
   <body>
     <nav class="navbar navbar-default navbar-static-top">
-        <a type="button" class="btn pull-left" href="/create">
+        <a type="button" class="btn pull-left" href="/">
             <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
       <div class="navbar-brand"><h3>Review recipe</h3></div>
       <div class="pull-right">
-        <button class="btn">
+        <a tabindex="0" class="btn" role="button" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="Preview the recipe you just created. Feel free to edit, delete, or save when you are done.">
             <span class="glyphicon glyphicon-question-sign"></span>
-          </button>
+        </a>
       </div>
     </nav>
+
+    <div class="container">
+      <img src="https://gatewaytoscience.org/wp-content/uploads/2020/07/grilled-cheese-sandwich.jpg" class="thumbnail img-responsive img-rounded">
+      <div class="panel panel-default">
+        <div class="panel-body"><h3>Grilled Cheese Sandwich</h3></div>
+        <div class="panel-body">
+          <h4>Ingredients</h4>
+          <ul>
+            <li>3 tbsp butter</li>
+            <li>2 slices cheddar cheese</li>
+            <li>2 slices bread</li>
+          </ul>
+        </div>
+        <div class="panel-body">
+          <h4>Instructions</h4>
+          <ol>
+            <li>Preheat skillet over medium heat</li>
+            <li>Generously butter one side of a slice of bread</li>
+            <li>Place bread butter-side-down onto skillet and add 1 slice of cheese</li>
+            <li>Butter a second slice of bread on one side and place butter-side-up on top of sandwich</li>
+            <li>Grill until slightly browned and flip over, continue grilling until cheese is melted</li>
+          </ol>
+        </div>
+      </div>
+      <div class="btn-group btn-group-justified">
+        <a href="/yourRecipes" type="button" class="btn btn-default">Delete</a>
+        <a href="/create" type="button" class="btn btn-default">Edit</a>
+        <a href="/yourRecipes" type="button" class="btn btn-primary">Save</a>
+      </div>
+    </div>
   </body>
 
 </html>
