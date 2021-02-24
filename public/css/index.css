@@ -5,7 +5,9 @@ body{
 .carousel {
   box-shadow: 5px 10px 8px #aaaaaa;
   border-radius: 25px;
-  overflow: hidden
+  overflow: hidden;
+  max-width: 520px;
+  margin: auto
 }
 
 .carousel h3 {
