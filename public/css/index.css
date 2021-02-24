@@ -3,9 +3,9 @@ body{
 }
 
 .carousel {
-  width:520px;
-  height:348px;
-  box-shadow: 5px 10px 8px #888888
+  box-shadow: 5px 10px 8px #aaaaaa;
+  border-radius: 25px;
+  overflow: hidden
 }
 
 .carousel h3 {
@@ -16,7 +16,7 @@ body{
   color: rgb(255, 255, 255);
 }
 
-.container a {
+.big-btn a {
   padding: 20px;
   border-radius: 25px;
   box-shadow: 5px 10px 8px #888888;
