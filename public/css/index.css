@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(237, 238, 238);
+  background-color: rgb(237, 238, 238);
 }
 
 .carousel {
@@ -34,4 +34,5 @@ body{
 .carousel-inner:hover {
   border-style:solid;
   border-color:rgb(141, 141, 141);
+  border-radius: 25px;
 }
