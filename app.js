@@ -13,6 +13,7 @@ var create = require('./routes/create');
 var reviewCreate = require('./routes/reviewCreate');
 var yourRecipes = require('./routes/yourRecipes');
 var find = require('./routes/find');
+var login = require('./routes/login');
 // Example route
 // var user = require('./routes/user');
 
@@ -43,6 +44,7 @@ app.get('/create', create.view);
 app.get('/reviewCreate', reviewCreate.view);
 app.get('/yourRecipes', yourRecipes.view);
 app.get('/find', find.view);
+app.get('/login',login.view);
 
 // Example route
 // app.get('/users', user.list);

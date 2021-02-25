@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/updateInput.js"></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-static-top">
+      <div class="navbar-brand"><h3>Login</h3></div>
+      <div class="pull-right">
+        <a tabindex="0" class="btn" role="button" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="Login using your username and password">
+            <span class="glyphicon glyphicon-question-sign"></span>
+        </a>
+      </div>
+    </nav>
+    <form action="/">
+    <div class="container">
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" class="form-control" style="margin-bottom: 15px" placeholder="Enter username" required>
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" style="margin-bottom: 15px" placeholder="Enter password" required>
+        </div>
+        <div class="form-group">
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <div class="pull-right">
+                <span class="psw"><a href="">Forgot password?</a></span>
+            </div>
+            <div class="col text-left">
+                <a href="/"><button class="btn btn-lg btn-primary">Login</button ></a>
+                <a href=""><button class="btn btn-default pull-right">Sign Up</button></a>
+            </div>
+        </div>
+    </div>
+    </form>
+    <div class="footer navbar navbar-default navbar-fixed-bottom text-center"></div>
+
+</body>
+</html>
