@@ -29,6 +29,10 @@ body{
 
 .navbar-brand h3 {
   text-align: center;
+  float: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hero{
