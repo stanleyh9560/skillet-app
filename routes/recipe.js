@@ -18,7 +18,7 @@ exports.view = function(req, res){
     }
   }
 
-  res.render('reviewCreate', {
+  res.render('recipe', {
     'name': nameToShow,
     'ingredients': ing,
     'instructions': inst,

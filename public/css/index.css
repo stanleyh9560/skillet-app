@@ -36,3 +36,56 @@ body{
   border-color:rgb(141, 141, 141);
   border-radius: 25px;
 }
+
+.hero{
+  width: 80%;
+  height: 450px;
+  position: relative;
+  margin: 100px auto;
+}
+
+.btn-box{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.btn-box button{
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  margin-right: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn-box button:hover {
+  color: #ff7846
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 5% auto;
+  position: absolute;
+}
+
+.content img {
+  width: 350px;
+}
+
+#content1{
+  display: initial;
+}
+
+#content2{
+  display: none;
+}
+
+#btn1{
+  color: #ff7846;
+}
