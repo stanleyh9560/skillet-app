@@ -14,6 +14,7 @@ var reviewCreate = require('./routes/reviewCreate');
 var yourRecipes = require('./routes/yourRecipes');
 var find = require('./routes/find');
 var login = require('./routes/login');
+var recipe = require('./routes/recipe');
 // Example route
 // var user = require('./routes/user');
 
@@ -45,6 +46,7 @@ app.get('/reviewCreate/:name', reviewCreate.view);
 app.get('/yourRecipes', yourRecipes.view);
 app.get('/find', find.view);
 app.get('/login',login.view);
+app.get('/recipe/:name', recipe.view);
 
 // Example route
 // app.get('/users', user.list);

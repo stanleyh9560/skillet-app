@@ -1,0 +1,62 @@
+<html>
+  <head>
+  	<title>Recipe</title>
+    <meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link href="/css/bootstrap.css" rel="stylesheet">
+  	<link href="/css/bootstrap-theme.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+  	<script src="/js/bootstrap.js"></script>
+    <script src="/js/updateInput.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-static-top">
+        <a type="button" class="btn pull-left" href="/find">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+      <div class="navbar-brand"><h3>Recipe</h3></div>
+      <div class="pull-right">
+        <a tabindex="0" class="btn" role="button" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="Recipe saved.">
+            <span class="glyphicon glyphicon-bookmark"></span>
+        </a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <img src={{imageURL}} class="thumbnail img-responsive img-rounded">
+      <div class="panel panel-default">
+        <div class="panel-body"><h3>{{name}}</h3></div>
+        <div class="panel-body">
+          <h4>Ingredients</h4>
+          <ul>
+            {{#each ingredients}}
+            <li>{{this}}</li>
+            {{/each}}
+          </ul>
+        </div>
+        <div class="panel-body">
+          <h4>Instructions</h4>
+          <ol>
+            {{#each instructions}}
+            <li>{{this}}</li>
+            {{/each}}
+          </ol>
+        </div>
+      </div>
+      <div class="btn-group btn-group-justified" style="margin-bottom: 80px">
+        <!-- <a href="#" type="button" class="btn btn-primary">Comment</a> -->
+        <a href="" type="button" class="btn btn-primary">Comment</a>
+      </div>
+    </div>
+
+
+    <div class="footer navbar navbar-default navbar-fixed-bottom text-center">
+      <a type="button" class="btn btn-lg" href="/">
+          <span class="glyphicon glyphicon-home"></span>
+      </a>
+    </div>
+  </body>
+
+</html>
