@@ -75,7 +75,10 @@ body{
 }
 
 .content img {
-  width: 350px;
+  width: 150px;
+  margin: auto;
+  border-radius: 10%;
+  border: 3px solid #ff7846;
 }
 
 #content1{
