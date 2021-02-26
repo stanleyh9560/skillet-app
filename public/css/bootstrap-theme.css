@@ -37,19 +37,18 @@
 }
 
 .btn-default {
-  text-shadow: 0 1px 0 #fff;
-  background-image: -webkit-linear-gradient(top, #ffffff 0%, #e0e0e0 100%);
-  background-image: linear-gradient(to bottom, #ffffff 0%, #e0e0e0 100%);
+  background-image: -webkit-linear-gradient(top, #DE7C00 0%, #DE7C00 100%);
+  background-image: linear-gradient(to bottom, #DE7C00 0%, #DE7C00 100%);
   background-repeat: repeat-x;
   border-color: #dbdbdb;
-  border-color: #ccc;
+  border-color: #DE7C00;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #e0e0e0;
+  background-color: #DE7C00;
   background-position: 0 -15px;
 }
 

@@ -31,12 +31,6 @@ body{
   text-align: center;
 }
 
-.carousel-inner:hover {
-  border-style:solid;
-  border-color:rgb(141, 141, 141);
-  border-radius: 25px;
-}
-
 .hero{
   width: 80%;
   height: 450px;
