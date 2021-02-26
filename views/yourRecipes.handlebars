@@ -28,8 +28,14 @@
 
     <div class="hero">
       <div class="btn-box">
-          <button>Saved</button>
-          <button>Created</button>
+          <button id="btn1" onclick="openSaved()">Saved</button>
+          <button id="btn2" onclick="openCreated()">Created</button>
+      </div>
+      <div id="content1" class="content">
+        <img src="https://www.thespruceeats.com/thmb/AAnECK7pIP9DrvVOFlM2CRRndWM=/4048x2696/filters:fill(auto,1)/vegetarian-bean-and-rice-burrito-recipe-3378550-hero-01-40ecbc08fcc84e80b8be853c1b779a13.jpg">
+      </div>
+      <div id="content2" class="content">
+        <img src="https://www.simplyrecipes.com/thmb/hW5yl6EWS3ypqmQ515Xq1Z2N2Iw=/1200x800/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2007__01__homemade-pizza-horiz-a-1200-4d93aa914b09468ab2bc4e2e7070e2db.jpg">
       </div>
     </div>
 
@@ -39,6 +45,27 @@
           <span class="glyphicon glyphicon-home"></span>
       </a>
     </div>
+
+    <script>
+      var content1 = document.getElementById("content1");
+      var content2 = document.getElementById("content2");
+      var btn1 = document.getElementById("btn1");
+      var btn2 = document.getElementById("btn2");
+
+      function openSaved(){
+        content1.style.display = "initial";
+        content2.style.display = "none";
+        btn1.style.color = "#ff7846";
+        btn2.style.color = "#000";
+      }
+      function openCreated(){
+        content1.style.display = "none";
+        content2.style.display = "initial";
+        btn1.style.color = "#000";
+        btn2.style.color = "#ff7846";
+      }
+    </script>
+
   </body>
 
 </html>
