@@ -41,7 +41,7 @@ body{
   width: 80%;
   height: 450px;
   position: relative;
-  margin: 100px auto;
+  margin: 10px auto;
 }
 
 .btn-box{
@@ -75,7 +75,11 @@ body{
 }
 
 .content img {
-  width: 350px;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border-radius: 10%;
+  border: 3px solid #ff7846;
 }
 
 #content1{
