@@ -76,6 +76,7 @@ body{
 
 .content img {
   width: 150px;
+  height: 150px;
   margin: auto;
   border-radius: 10%;
   border: 3px solid #ff7846;
