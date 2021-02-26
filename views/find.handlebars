@@ -22,11 +22,47 @@
         </a>
       </div>
     </nav>
+    
+    <div class="container">  
+      <input class="form-control" id="myInput" type="text" placeholder="Search..">
+      <br>
+      <div id="myBtnContainer" style="margin-bottom: 15px">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('beginner')"> Beginner</button>
+        <button class="btn" onclick="filterSelection('intermediate')"> Intermediate</button>
+        <button class="btn" onclick="filterSelection('advanced')"> Advanced</button>
+      </div>
+      <ul class="list-group" id="myList">
+        <li class="list-group-item" id="beginner"> <a href="https://seonkyounglongest.com/easy-egg-fried-rice/">
+          <img src="https://i0.wp.com/seonkyounglongest.com/wp-content/uploads/2020/02/Egg-Fried-Rice-2.jpg?fit=1300%2C867&ssl=1"
+		      alt="Fried Rice" style="max-width:150">Egg Fried Rice</a></li>
+        <li class="list-group-item" id="advanced"> <a href="https://www.simplyrecipes.com/recipes/homemade_pizza/">
+	        <img src="https://www.simplyrecipes.com/thmb/hW5yl6EWS3ypqmQ515Xq1Z2N2Iw=/1200x800/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2007__01__homemade-pizza-horiz-a-1200-4d93aa914b09468ab2bc4e2e7070e2db.jpg"
+		      alt="Pizza" style="width:150">Mushroom Pizza</a></li>
+        <li class="list-group-item" id= "intermediate"> <a href="https://www.thespruceeats.com/vegetarian-bean-and-rice-burrito-recipe-3378550">
+		      <img src="https://www.thespruceeats.com/thmb/AAnECK7pIP9DrvVOFlM2CRRndWM=/4048x2696/filters:fill(auto,1)/vegetarian-bean-and-rice-burrito-recipe-3378550-hero-01-40ecbc08fcc84e80b8be853c1b779a13.jpg"
+			    alt="Burrito" style="width:150">Vegetarian Burrito</button></a></li>
+      </ul>  
+    </div>
+
+
+
 
     <div class="footer navbar navbar-default navbar-fixed-bottom text-center">
       <a type="button" class="btn btn-lg" href="/">
           <span class="glyphicon glyphicon-home"></span>
       </a>
     </div>
+
+    <script>
+      $(document).ready(function(){
+        $("#myInput").on("keyup", function() {
+          var value = $(this).val().toLowerCase();
+          $("#myList li").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+      });
+    </script>
     </body>
 </html>
