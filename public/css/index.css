@@ -97,3 +97,10 @@ body{
 #btn1{
   color: #ff7846;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-width: 100px
+}
