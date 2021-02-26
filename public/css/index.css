@@ -82,6 +82,14 @@ body{
   border: 3px solid #ff7846;
 }
 
+.container2{
+  width: 150px;
+  height: 150px;
+  background: white;
+  border-radius: 10%;
+  border: 3px solid #ff7846;
+}
+
 #content1{
   display: initial;
 }
