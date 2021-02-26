@@ -25,25 +25,23 @@
     </nav>
 
     <div class="container">
-      <img src="https://gatewaytoscience.org/wp-content/uploads/2020/07/grilled-cheese-sandwich.jpg" class="thumbnail img-responsive img-rounded">
+      <img src={{imageURL}} class="thumbnail img-responsive img-rounded">
       <div class="panel panel-default">
-        <div class="panel-body"><h3>Grilled Cheese Sandwich</h3></div>
+        <div class="panel-body"><h3>{{name}}</h3></div>
         <div class="panel-body">
           <h4>Ingredients</h4>
           <ul>
-            <li>3 tbsp butter</li>
-            <li>2 slices cheddar cheese</li>
-            <li>2 slices bread</li>
+            {{#each ingredients}}
+            <li>{{this}}</li>
+            {{/each}}
           </ul>
         </div>
         <div class="panel-body">
           <h4>Instructions</h4>
           <ol>
-            <li>Preheat skillet over medium heat</li>
-            <li>Generously butter one side of a slice of bread</li>
-            <li>Place bread butter-side-down onto skillet and add 1 slice of cheese</li>
-            <li>Butter a second slice of bread on one side and place butter-side-up on top of sandwich</li>
-            <li>Grill until slightly browned and flip over, continue grilling until cheese is melted</li>
+            {{#each instructions}}
+            <li>{{this}}</li>
+            {{/each}}
           </ol>
         </div>
       </div>

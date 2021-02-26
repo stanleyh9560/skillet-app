@@ -1,0 +1,60 @@
+[
+  {
+		"name": "Grilled Cheese Sandwich",
+		"ingredients": ["3 tbsp butter","2 slices cheddar cheese","2 slices bread"],
+    "instructions": ["Preheat skillet over medium heat",
+                      "Generously butter one side of a slice of bread",
+                      "Place bread butter-side-down onto skillet bottom and add 1 slice of cheese",
+                      "Butter a second slice of bread on one side and place butter-side-up on top of sandwich",
+                      "Grill until lightly browned and flip over, continue grilling until cheese is melted"],
+		"imageURL": "https://gatewaytoscience.org/wp-content/uploads/2020/07/grilled-cheese-sandwich.jpg"
+	},
+  {
+    "name": "Egg Salad Sandwich",
+    "ingredients": ["1/3 cup fat-free mayonnaise", "1/4 tsp salt", "1/8 tsp pepper",
+                    "4 hard-boiled large eggs, chopped", "2 slices bread", "4 spinach leaves"],
+    "instructions": ["In a small bowl, combine the first 3 ingredients",
+                     "Gently stir in eggs",
+                     "Spread over toast slice, top with spinach and remaining toast"],
+    "imageURL": "https://cdn3.tmbi.com/toh/GoogleImagesPostCard/Pesto-Egg-Salad-Sandwiches_exps89693_THHC2377559B01_09_3b_RMS.jpg"
+  },
+  {
+    "name": "Egg Fried Rice",
+    "ingredients": ["3 tbsp cooking oil", "4 eggs, beaten with a pinch of salt", "4 cups cold jasmine rice",
+                    "2 tbsp soy sauce", "pinch of salt", "4 green onions, sliced"],
+    "instructions": ["Heat a wok or a skillet over high heat; add 1 tbsp cooking oil and swirl to coat",
+                     "Pour beaten eggs into the wok and scramble",
+                     "When the eggs are cooked 3/4 way, add remaining 2 tbsp cooking oil and cold jasmine rice",
+                     "Breakdown rice and mix it with eggs", "Add soy sauce around the edge of the wok",
+                     "Add salt to your taste and mix everything well", "Turn off the heat, stir in green onions"],
+    "imageURL": "https://i0.wp.com/seonkyounglongest.com/wp-content/uploads/2020/02/Egg-Fried-Rice-2.jpg?fit=1300%2C867&ssl=1"
+  },
+  {
+    "name": "Burrito",
+    "ingredients": ["2 cups cooked rice", "2 tbsp fresh cilantro, chopped", "2 limes, juiced", "1/2 medium onion, diced",
+                    "3-4 cloves garlic, minced", "2 tbsp vegetable oil", "1 can (15-oz) black beans", "1 tbsp chili powder",
+                    "1/2 tsp cumin", "1 tbsp hot sauce", "2 (10-inch) large tortillas"],
+    "instructions": ["In a large microwave-safe bowl, toss together cooked rice and fresh chopped cilantro, and drizzle with the lime juice",
+                     "Heat in the microwave or on the stove just until hot, and give it a quick stir",
+                     "In a separate large skillet, sauté the onion in vegetable oil or olive oil for 5 minutes, or until the onion is soft",
+                     "Add the garlic and cook another minute",
+                     "Reduce the heat to medium-low, add the black beans or pinto beans, and season with the chili powder, cumin, and hot sauce, stirring to combine",
+                     "Spoon the cilantro-lime rice and the black bean mix onto lightly warmed flour tortillas",
+                     "Wrap the burritos: Fold the short ends in, then fold one long side over the filling and gently push to ensure the fold is tight before rolling up the remainder of the burrito"],
+    "imageURL": "https://www.thespruceeats.com/thmb/AAnECK7pIP9DrvVOFlM2CRRndWM=/4048x2696/filters:fill(auto,1)/vegetarian-bean-and-rice-burrito-recipe-3378550-hero-01-40ecbc08fcc84e80b8be853c1b779a13.jpg"
+  },
+  {
+    "name": "Pizza",
+    "ingredients": ["2 1/2 cups flour", "1 tsp salt", "tsp sugar", "1 tbsp fast rise yeast", "1 cup water", "1 tbsp oil",
+                    "1/4 cup tomato sauce", "1 tsp italian seasoning", "1/2 tsp garlic powder", "1/8 tsp pepper",
+                    "1 1/2 cups pepperoni slices", "1 cup shredded mozarella cheese", "1 cup shredded monterey jack cheese",
+                    "3 tbsp grated parmesan cheese"],
+    "instructions": ["In large bowl, mix first 4 ingredients", "Mix water and oil; add to flour mixture",
+                    "Turn onto floured surface; knead for 2 minutes", "Place in a greased bowl; turning to grease top",
+                    "Cover and let rise for 20 minutes", "Punch down; place on 12in, greased pizza pan",
+                    "Pat into a circle", "Topping: Mix first 5 ingredients and spread over crust",
+                    "Put a few pepperoni slices on top of sauce", "Sprinkle with 1/2 the mozzeralla; 1/2 the monterey jack, and 1/2 the parmesan",
+                    "Put the rest of the pepperoni on", "Repeat the cheese layer", "Bake at 400* for 20 minutes or until light brown"],
+    "imageURL": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/22/75/4/6SPX9PQ6WWdM49K06A1A_pizzaaa.jpg"
+  }
+]

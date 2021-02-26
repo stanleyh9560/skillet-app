@@ -41,7 +41,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', index.view);
 app.get('/create', create.view);
-app.get('/reviewCreate', reviewCreate.view);
+app.get('/reviewCreate/:name', reviewCreate.view);
 app.get('/yourRecipes', yourRecipes.view);
 app.get('/find', find.view);
 app.get('/login',login.view);

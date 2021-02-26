@@ -25,7 +25,7 @@ function addIngredient() {
   var html = '';
   html += '<div id="inputFormRow">';
   html += '<div class="input-group">';
-  html += '<input type="text" class="form-control" placeholder="Enter measurement and ingredient">';
+  html += '<input required type="text" class="form-control" placeholder="Enter measurement and ingredient">';
   html += '<div class="input-group-btn">';
   html += '<button id="removeIng" class="btn btn-default" type="button">X</button>';
   html += '</div>';
@@ -52,7 +52,7 @@ function addInstruction(e) {
   html += '<div id="inputFormRow2">';
   html += '<div class="input-group">';
   html = html + '<span class="input-group-addon">' + quantity + '</span>';
-  html += '<input type="text" class="form-control" placeholder="Enter instruction">';
+  html += '<input required type="text" class="form-control" placeholder="Enter instruction">';
   html += '<div class="input-group-btn">';
   html += '<button id="removeInstr" class="btn btn-default" type="button">X</button>';
   html += '</div>';
