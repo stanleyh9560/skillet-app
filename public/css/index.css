@@ -57,7 +57,7 @@ body{
 }
 
 .btn-box button:hover {
-  color: #ff7846
+  color: #DE7C00
 }
 
 .content{
@@ -73,7 +73,7 @@ body{
   height: 150px;
   margin: 10px 10px;
   border-radius: 10%;
-  border: 3px solid #ff7846;
+  border: 3px solid #DE7C00;
 }
 
 .container2{
@@ -83,7 +83,7 @@ body{
   margin: 10px 10px;
   padding: 30px;
   border-radius: 10%;
-  border: 3px solid #ff7846;
+  border: 3px solid #DE7C00;
 }
 
 #content1{
@@ -95,7 +95,7 @@ body{
 }
 
 #btn1{
-  color: #ff7846;
+  color: #DE7C00;
 }
 .center {
   display: block;
