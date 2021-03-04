@@ -5,6 +5,7 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   	<link href="/css/bootstrap.css" rel="stylesheet">
   	<link href="/css/bootstrap-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
 
     <script src="https://code.jquery.com/jquery.js"></script>
   	<script src="/js/bootstrap.js"></script>
@@ -25,20 +26,20 @@
     </nav>
 
     <div class="container">
-      <form id="recipeForm" action="/reviewCreate/Grilled Cheese Sandwich">
+      <form id="recipeForm" action="/reviewCreate">
       <div class="form-group">
         <label>Name</label>
-        <input required type="text" id="recipeName" class="form-control" placeholder="Name of your recipe">
+        <input required type="text" name="name" class="form-control" placeholder="Name of your recipe">
       </div>
 
       <div class="form-group">
         <label>Ingredients</label>
         <div id="inputFormRow">
-            <input required type="text" id="ingredients" class="form-control" style="margin-bottom: 15px" placeholder="Enter measurement and ingredient">
+            <input required type="text" name="ingredients" class="form-control" style="margin-bottom: 15px" placeholder="Enter measurement and ingredient">
         </div>
         <div id="newIng"></div>
         <div class="col text-left">
-          <button id="addIng" type="button" class="btn" style="color: #DE7C00; border-color: #DE7C00; background-color: #fafafa">Add ingredient</button>
+          <button id="addIng" type="button" class="btn btn-outline" >Add ingredient</button>
         </div>
       </div>
 
@@ -47,12 +48,12 @@
         <div id="inputFormRow2">
           <div class="input-group">
             <span id="quantity" class="input-group-addon" data-value="1">1</span>
-            <input required type="text" id="instructions" class="form-control" placeholder="Enter instruction">
+            <input required type="text" name="instructions" class="form-control" placeholder="Enter instruction">
           </div>
         </div>
         <div id="newInstr"></div>
-        <div class="col text-left">
-          <button id="addInstr" type="button" class="btn" style="color: #DE7C00; border-color: #DE7C00; background-color: #fafafa">Add step</button>
+          <div class="col text-left">
+            <button id="addInstr" type="button" class="btn btn-outline" >Add step</button>
         </div>
       </div>
 

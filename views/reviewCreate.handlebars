@@ -5,6 +5,7 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   	<link href="/css/bootstrap.css" rel="stylesheet">
   	<link href="/css/bootstrap-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
 
     <script src="https://code.jquery.com/jquery.js"></script>
   	<script src="/js/bootstrap.js"></script>
@@ -46,8 +47,8 @@
         </div>
       </div>
       <div class="btn-group btn-group-justified" style="margin-bottom: 80px">
-        <a href="#" type="button" class="btn" data-toggle="modal" data-target="#deleteModal" style="color: #DE7C00; border-color: #DE7C00; background-color: #fafafa">Delete</a>
-        <a href="/create" type="button" class="btn" style="color: #DE7C00; border-color: #DE7C00; background-color: #fafafa">Edit</a>
+        <a href="#" type="button" class="btn btn-outline" data-toggle="modal" data-target="#deleteModal">Delete</a>
+        <a href="/create" type="button" class="btn btn-outline">Edit</a>
         <a href="#" type="button" class="btn btn-default" data-toggle="modal" data-target="#createModal">Done</a>
       </div>
     </div>
@@ -62,7 +63,7 @@
           </div>
           <div class="modal-body">Are you sure you want to delete this recipe? This action cannot be undone.</div>
           <div class="modal-footer">
-            <button type="button" class="btn" data-dismiss="modal" style="color: #DE7C00; border-color: #DE7C00; background-color: #fafafa">Cancel</button>
+            <button type="button" class="btn btn-outline" data-dismiss="modal">Cancel</button>
             <a href="/"><button type="button" class="btn btn-default">Delete</button></a>
           </div>
         </div><!-- /.modal-content -->

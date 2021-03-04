@@ -1,6 +1,6 @@
-body{
+/*body{
   background-color: rgb(237, 238, 238);
-}
+} */
 
 .carousel {
   box-shadow: 5px 10px 8px #aaaaaa;
@@ -97,10 +97,17 @@ body{
 #btn1{
   color: #DE7C00;
 }
+
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
   max-width: 100px
+}
+
+.btn-outline {
+  color: #DE7C00;
+  border-color: #DE7C00;
+  background-color: #fafafa
 }
