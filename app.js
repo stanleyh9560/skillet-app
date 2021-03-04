@@ -40,12 +40,12 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', index.view);
+app.get('/index', index.view);
 app.get('/create', create.view);
 app.get('/reviewCreate', reviewCreate.view);
 app.get('/yourRecipes', yourRecipes.view);
 app.get('/find', find.view);
-app.get('/login',login.view);
+app.get('/',login.view);
 app.get('/recipe/:name', recipe.view);
 app.post('/createRecipe', create.createRecipe);
 
