@@ -74,6 +74,7 @@
   margin: 10px 10px;
   border-radius: 10%;
   border: 3px solid #DE7C00;
+  object-fit: cover;
 }
 
 .container2{
