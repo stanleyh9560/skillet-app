@@ -11,5 +11,5 @@ var data = require("../data.json");
 exports.createRecipe = function(request, response) {
 	// Your code goes here
   var recipe = request.body;
-  data.push(recipe);
+  data.recipes.push(recipe);
 }

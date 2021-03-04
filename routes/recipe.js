@@ -10,11 +10,11 @@ exports.view = function(req, res){
   var img;
   //console.log("name is " + nameToShow);
 
-  for (var key in data) {
-    if (data[key]['name'] == nameToShow) {
-      ing = data[key]['ingredients'];
-      inst = data[key]['instructions'];
-      img = data[key]['imageURL'];
+  for (var key in data.recipes) {
+    if (data.recipes[key]['name'] == nameToShow) {
+      ing = data.recipes[key]['ingredients'];
+      inst = data.recipes[key]['instructions'];
+      img = data.recipes[key]['imageURL'];
     }
   }
 
