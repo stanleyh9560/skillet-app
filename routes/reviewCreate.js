@@ -1,17 +1,17 @@
-var data = require('../data.json');
+var data = require('../data_recipes_created.json');
 /*
  * GET review created recipe page.
  */
 
 exports.view = function(req, res){
   // Get index of the most recent recipe
-  var index = data.recipes.length-1;
+  var index = data.created.length-1;
 
   // Get data of the most recent recipe
-  var nameToShow = data.recipes[index]['name'];
-  var ing = data.recipes[index]['ingredients'];
-  var inst = data.recipes[index]['instructions'];
-  var img = data.recipes[index]['imageURL'];
+  var nameToShow = data.created[index]['name'];
+  var ing = data.created[index]['ingredients'];
+  var inst = data.created[index]['instructions'];
+  var img = data.created[index]['imageURL'];
   // console.log("name is " + nameToShow);
 
   /* // To find recipe that matches name

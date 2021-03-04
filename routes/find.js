@@ -1,4 +1,4 @@
-var recipes = require('../data.json');
+var recipes = require('../data_recipes_all.json');
 /*
  * GET find recipe page.
  */

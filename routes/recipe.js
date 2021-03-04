@@ -1,4 +1,4 @@
-var data = require('../data.json');
+var data = require('../data_recipes_all.json');
 /*
  * GET review created recipe page.
  */
