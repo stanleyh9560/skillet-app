@@ -8,7 +8,7 @@ exports.view = function(req, res){
   var ing;
   var inst;
   var img;
-  console.log("name is " + nameToShow);
+  //console.log("name is " + nameToShow);
 
   for (var key in data) {
     if (data[key]['name'] == nameToShow) {
