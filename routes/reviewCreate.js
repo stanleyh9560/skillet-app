@@ -30,14 +30,12 @@ exports.deleteRecipe = function(req, res) {
   for (var key in data2.created) {
     if (data2.created[key]['name'] == nameToShow) {
       data2.created.splice(key);
-      break;
     }
   }
   // Delete recipe from all JSON data
   for (var key in data.recipes) {
     if (data.recipes[key]['name'] == nameToShow) {
       data.recipes.splice(key);
-      break;
     }
   }
 }
