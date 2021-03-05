@@ -21,5 +21,5 @@ function checkLoginState() {
   function changeUser(response) {
     $(".facebookLogin").hide();
     $("#name").text(response.name); 
-    //window.location.href = "/index";
+    window.location.href = "/index";
   }
