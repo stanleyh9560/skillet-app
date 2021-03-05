@@ -21,6 +21,7 @@ function initializePage() {
 	})
 
 	$('#recipeForm').submit(handleSubmit);
+	$('#deleteRecipe').click(handleDelete);
 }
 
 function addIngredient() {
@@ -93,4 +94,10 @@ function handleSubmit(e) {
 
 	//console.log(newRecipe);
 	$.post('createRecipe', newRecipe);
+}
+
+function handleDelete(e) {
+	var name = $("#reviewName h3").text();
+
+	$.post('deleteRecipe', {name: name});
 }

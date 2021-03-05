@@ -48,6 +48,7 @@ app.get('/find', find.view);
 app.get('/',login.view);
 app.get('/recipe/:name', recipe.view);
 app.post('/createRecipe', create.createRecipe);
+app.post('/deleteRecipe', reviewCreate.deleteRecipe);
 
 // Example route
 // app.get('/users', user.list);
