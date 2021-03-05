@@ -23,6 +23,29 @@ exports.view = function(req, res){
   });
 };
 
+exports.viewCreated = function(req, res) {
+  var nameToShow = req.params.name;
+  var ing;
+  var inst;
+  var img;
+
+  // Find recipe in created JSON data
+  for (var key in data2.created) {
+    if (data2.created[key]['name'] == nameToShow) {
+      ing = data2.created[key]['ingredients'];
+      inst = data2.created[key]['instructions'];
+      img = data2.created[key]['imageURL'];
+    }
+  }
+
+  res.render('reviewCreate', {
+    'name': nameToShow,
+    'ingredients': ing,
+    'instructions': inst,
+    'imageURL': img
+  });
+}
+
 exports.deleteRecipe = function(req, res) {
   var nameToShow = req.body.name;
 
