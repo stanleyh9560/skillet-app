@@ -52,13 +52,13 @@ exports.deleteRecipe = function(req, res) {
   // Delete recipe for created JSON data
   for (var key in data2.created) {
     if (data2.created[key]['name'] == nameToShow) {
-      data2.created.splice(key);
+      data2.created.splice(key, 1);
     }
   }
   // Delete recipe from all JSON data
   for (var key in data.recipes) {
     if (data.recipes[key]['name'] == nameToShow) {
-      data.recipes.splice(key);
+      data.recipes.splice(key, 1);
     }
   }
 }

@@ -78,8 +78,7 @@ function removeInstruction(e){
 }
 
 function handleSubmit(e) {
-	//e.preventDefault();
-
+	
 	var createData = new FormData(e.target);
 	var name = createData.get('name');
 	var ingredients = createData.getAll('ingredients');
@@ -92,12 +91,10 @@ function handleSubmit(e) {
     "imageURL": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"
     }
 
-	//console.log(newRecipe);
 	$.post('createRecipe', newRecipe);
 }
 
 function handleDelete(e) {
 	var name = $("#reviewName h3").text();
-
-	$.post('deleteRecipe', {name: name});
+	$.post('/deleteRecipe', {name: name});
 }
