@@ -22,6 +22,7 @@ function initializePage() {
 
 	$('#recipeForm').submit(handleSubmit);
 	$('#deleteRecipe').click(handleDelete);
+	$('#reviewBack').click(handleDelete);
 }
 
 function addIngredient() {
@@ -78,7 +79,7 @@ function removeInstruction(e){
 }
 
 function handleSubmit(e) {
-	
+
 	var createData = new FormData(e.target);
 	var name = createData.get('name');
 	var ingredients = createData.getAll('ingredients');
