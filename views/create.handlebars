@@ -57,9 +57,17 @@
         </div>
       </div>
 
+        <!--Upload image-->
+        <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+          <input id="upload" type="file" name="imageURL" onchange="readURL(this);" class="form-control border-0">
+        </div>
+        <!-- Uploaded image area-->
+        <div class="image-area mt-4"><img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
+
         <div class="col text-right" style="margin-top: 30px; margin-bottom: 80px">
           <button type="submit" class="btn btn-lg btn-default">Next</button>
         </div>
+
     </div>
   </form>
 
@@ -73,6 +81,26 @@
 	  <a type="button" class="btn btn-lg" style="margin-left: 30px"href="/yourRecipes">
           <span class=" glyphicon glyphicon-book "></span></a>
     </div>
+
+    <script>
+      function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#imageResult')
+                    .attr('src', e.target.result);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+      }
+
+      $(function () {
+          $('#upload').on('change', function () {
+              readURL(input);
+          });
+      });
+    </script>
   </body>
 
 </html>
