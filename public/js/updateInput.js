@@ -96,8 +96,6 @@ function handleSubmit(e) {
 		imageURL = $('#imageResult').attr('src');
 	}
 
-	console.log(imageURL);
-
 	var newRecipe = {
     "name": name,
     "ingredients": ingredients,
