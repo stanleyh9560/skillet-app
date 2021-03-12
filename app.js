@@ -48,6 +48,7 @@ app.get('/yourRecipes', yourRecipes.view);
 app.get('/find', find.view);
 app.get('/',login.view);
 app.get('/recipe/:name', recipe.view);
+app.get('/edit/:name', create.edit);
 app.post('/createRecipe', create.createRecipe);
 app.post('/deleteRecipe', reviewCreate.deleteRecipe);
 

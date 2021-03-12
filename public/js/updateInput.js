@@ -45,17 +45,23 @@ function removeIngredient(){
 function addInstruction(e) {
   e.preventDefault();
   // Get the field name
-  var quantity = parseInt($('#quantity').data('value'));
+  /*var quantity = parseInt($('#quantity').data('value'));
   // If is not undefined
-  if(quantity>0){
-    quantity += 1;
+  if(quantity == 0){
+    quantity += 2;
     $('#quantity').data('value', quantity);
-  }
+  } else if (quantity > 0) {
+		quantity += 1;
+    $('#quantity').data('value', quantity);
+	}*/
+
+	var vrows = document.getElementsByName("instructions");
+	var quantity = vrows.length + 1;
 
   var html = '';
   html += '<div id="inputFormRow2">';
   html += '<div class="input-group">';
-  html = html + '<span class="input-group-addon">' + quantity + '</span>';
+  html = html + '<span class="input-group-addon" data-value="' + quantity + '">' + quantity + '</span>';
   html += '<input required type="text" name="instructions" class="form-control" placeholder="Enter instruction">';
   html += '<div class="input-group-btn">';
   html += '<button id="removeInstr" class="btn btn-outline" type="button">X</button>';
@@ -90,9 +96,9 @@ function handleSubmit(e) {
     "ingredients": ingredients,
     "instructions": instructions,
     "imageURL": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"
-    }
+	}
 
-	$.post('createRecipe', newRecipe);
+	$.post('/createRecipe', newRecipe);
 }
 
 function handleDelete(e) {
