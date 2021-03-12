@@ -30,8 +30,8 @@
     <form action="/index">
     <div class="container">
         <div class="form-group">
-            <label>Username</label>
-            <input type="text" class="form-control" style="margin-bottom: 15px" placeholder="Enter username" required>
+            <label>Email</label>
+            <input type="text" class="form-control" style="margin-bottom: 15px" placeholder="Enter email" required>
         </div>
         <div class="form-group">
             <label>Password</label>
@@ -41,9 +41,6 @@
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>
-            <div class="pull-right">
-                <span class="psw"><a href="">Forgot password?</a></span>
-            </div>
             <div class="col text-left">
                 <a href="/index"><button class="btn btn-lg btn-default" >Login</button ></a>
                 <button type="button" class="btn btn-default pull-right" data-toggle="modal" data-target="#myModal">Sign up</button>
@@ -56,37 +53,39 @@
     </div>
     </form>
     
-    <div class="footer navbar navbar-default navbar-fixed-bottom text-center"></div>
-<div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Sign Up</h4>
-        </div>
-        <div class="modal-body">
-          <form action="/index">
-    <div class="container">
-        <div class="form-group">
-            <label>Username</label>
-            <input type="text" class="form-control" style="margin-bottom: 15px" placeholder="Enter username" required>
-        </div>
-        <div class="form-group">
-            <label>Password</label>
-            <input type="password" class="form-control" style="margin-bottom: 15px" placeholder="Enter password" required>
-        </div>
-        <div class="form-group">
-            <div class="col text-left">
-                <a href="/index"><button class="btn btn-lg btn-default" >Sign Up</button ></a>
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Sign Up</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="/index">
+                    <div class="container">
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="text" class="form-control" style="margin-bottom: 15px" placeholder="Enter email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" class="form-control" style="margin-bottom: 15px" placeholder="Enter password" required>
+                        </div>
+                        <div class="form-group">
+                            <div class="col text-left">
+                            <a href="/index"><button class="btn btn-lg btn-default" >Sign Up</button ></a>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
             </div>
         </div>
     </div>
-    </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
+    <div class="footer navbar navbar-default navbar-fixed-bottom text-center"></div>
 </body>
 </html>
