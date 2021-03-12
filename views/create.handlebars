@@ -65,7 +65,7 @@
           {{#if @index}}
           <div id="inputFormRow2">
             <div class="input-group">
-              <span class="input-group-addon numSteps" data-value="{{@index}}">{{@index}}</span>
+              <span class="input-group-addon numStep" data-value="{{@index}}">{{@index}}</span>
               <input required type="text" name="instructions" class="form-control" placeholder="Enter instruction" value="{{this}}">
               <div class="input-group-btn">
                 <button id="removeInstr" class="btn btn-outline" type="button">X</button>
@@ -75,7 +75,7 @@
           {{else}}
           <div id="inputFormRow2">
             <div class="input-group">
-              <span id="quantity" class="input-group-addon" data-value="{{@index}}">{{@index}}</span>
+              <span class="input-group-addon numStep" data-value="{{@index}}">{{@index}}</span>
               <input required type="text" name="instructions" class="form-control" placeholder="Enter instruction" value="{{this}}">
             </div>
           </div>
@@ -93,7 +93,7 @@
           <input id="upload" type="file" name="imageURL" onchange="readURL(this);" class="form-control border-0">
         </div>
         <!-- Uploaded image area-->
-        <div class="image-area mt-4"><img id="imageResult" src="{{imageURL}}" alt="" class="thumbnail img-rounded shadow-sm mx-auto d-block img-responsive"></div>
+        <div class="image-area mt-4"><img id="imageResult" src="{{imageURL}}" alt="" class="img-rounded shadow-sm mx-auto d-block img-responsive"></div>
 
         <div class="col text-right" style="margin-top: 30px; margin-bottom: 80px">
           <button type="submit" class="btn btn-lg btn-default">Next</button>
@@ -123,7 +123,7 @@
       <label>Instructions</label>
       <div id="inputFormRow2">
         <div class="input-group">
-          <span id="quantity" class="input-group-addon" data-value="0">0</span>
+          <span class="input-group-addon numStep" data-value="0">0</span>
           <input required type="text" name="instructions" class="form-control" placeholder="Enter instruction">
         </div>
       </div>
@@ -139,7 +139,7 @@
       <input id="upload" type="file" name="imageURL" onchange="readURL(this);" class="form-control border-0">
     </div>
     <!-- Uploaded image area-->
-    <div class="image-area mt-4"><img id="imageResult" src="#" alt="" class="thumbnail img-rounded shadow-sm mx-auto d-block img-responsive"></div>
+    <div class="image-area mt-4"><img id="imageResult" src="#" alt="" class="img-rounded shadow-sm mx-auto d-block img-responsive"></div>
 
       <div class="col text-right" style="margin-top: 30px; margin-bottom: 80px">
         <button type="submit" class="btn btn-lg btn-default">Next</button>
@@ -162,7 +162,10 @@
 
     <script>
 
-      $("#quantity").text(parseInt($("#quantity").text())+1);
+    var divs = document.querySelectorAll('.numStep');
+    for (var i = 0; i < divs.length; ++i) {
+      divs[i].innerHTML = i + 1;
+    }
 
       function readURL(input) {
         if (input.files && input.files[0]) {
