@@ -1,5 +1,23 @@
 {
   "created": [
-
+    {
+      "name": "Grilled Cheese Sandwich",
+      "ingredients": ["3 tbsp butter","2 slices cheddar cheese","2 slices bread"],
+      "instructions": ["Preheat skillet over medium heat",
+                        "Generously butter one side of a slice of bread",
+                        "Place bread butter-side-down onto skillet bottom and add 1 slice of cheese",
+                        "Butter a second slice of bread on one side and place butter-side-up on top of sandwich",
+                        "Grill until lightly browned and flip over, continue grilling until cheese is melted"],
+      "imageURL": "https://thumbor.thedailymeal.com/Kxkaz55oijf-2ClIQMBDvmcCOoI=/870x565/https://www.thedailymeal.com/sites/default/files/story/2016/MAIN-american-shutterstock.jpg"
+    },
+    {
+      "name": "Egg Salad Sandwich",
+      "ingredients": ["1/3 cup fat-free mayonnaise", "1/4 tsp salt", "1/8 tsp pepper",
+                      "4 hard-boiled large eggs, chopped", "2 slices bread", "4 spinach leaves"],
+      "instructions": ["In a small bowl, combine the first 3 ingredients",
+                       "Gently stir in eggs",
+                       "Spread over toast slice, top with spinach and remaining toast"],
+      "imageURL": "https://cdn3.tmbi.com/toh/GoogleImagesPostCard/Pesto-Egg-Salad-Sandwiches_exps89693_THHC2377559B01_09_3b_RMS.jpg"
+    }
   ]
 }
