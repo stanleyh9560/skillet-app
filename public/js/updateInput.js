@@ -22,7 +22,7 @@ function initializePage() {
 
 	$('#recipeForm').submit(handleSubmit);
 	$('#deleteRecipe').click(handleDelete);
-	$('#reviewBack').click(handleDelete);
+	//$('#reviewBack').click(handleDelete);
 }
 
 function addIngredient() {
