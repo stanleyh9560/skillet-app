@@ -1,4 +1,3 @@
-repo
+Skillet App
 ====
-
-Project Description
+Heroku Link: https://a8-skillet-app.herokuapp.com/
